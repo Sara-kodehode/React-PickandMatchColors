@@ -1,0 +1,45 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
+  background-color: rgb(232, 228, 223);
+  display: flex;
+  justify-content: center;
+}
+.multicolorscontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border: 5px inset black;
+  border-radius: 20px;
+  overflow: hidden;
+  width: fit-content;
+  height: fit-content;
+}
+.oneColorPickerContainer {
+  display: flex;
+  flex-direction: column;
+}
+h1 {
+  margin: 50px;
+  font-size: 3rem;
+  text-align: center;
+}
+.colorDisplay {
+  flex: 1;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  transition: 0.2s ease-in-out;
+}
+
+.colorDisplay:hover {
+  border: 1px solid rgba(230, 224, 224, 0.731);
+}
+
+.inputColor {
+  transition: 0.2s ease-in-out;
+}
+.inputColor:hover {
+  box-shadow: 5px 5px 20px rgba(230, 224, 224, 0.731);
+}
